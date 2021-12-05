@@ -55,9 +55,14 @@
   border-bottom-style: solid;
   border-bottom-color: silver;
 }
-.book h2, p {
+.book h2, h3, p {
   margin-bottom: 4px;
   width: 800px;
+}
+
+.book h3 {
+  margin-top: 4px;
+  font-size: 16px;
 }
 
 .book button {

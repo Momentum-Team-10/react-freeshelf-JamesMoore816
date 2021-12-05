@@ -8,7 +8,7 @@ export default function Book(props) {
         <div className='book'>
             <img className="cover-image" src={coverImageUrl} alt={`Cover of "${title}"`}/>
             <h2>{title}</h2>
-            <p>{author}</p>
+            <h3>{author}</h3>
             <p>{shortDescription}</p>
             
             {expanded ? (
@@ -16,7 +16,7 @@ export default function Book(props) {
                     <button className="btn-sm controls"
                     onClick={() => setExpanded(false)}
                     >
-                    {'\u25BC'} Less information
+                    {`${'\u25BC'} Less information`}
                     </button>
                     <p><strong>URL: </strong><a href={url}>{url}</a></p>
                     <p><strong>Publisher: </strong>{publisher}</p>
@@ -26,7 +26,7 @@ export default function Book(props) {
                 </div>
             ) : (
                 <button className="btn-sm controls" onClick={() => setExpanded(true)}>
-                    {'\u25B8'} More information
+                    {`${'\u25B8'} More information`}
                 </button>
             )}
         </div>

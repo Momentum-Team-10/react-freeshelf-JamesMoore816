@@ -6,24 +6,27 @@ export default function Book(props) {
 
     return (
         <div className='book'>
-            <h3>{title}</h3>
-            <h4>{author}</h4>
+            <img className="cover-image" src={coverImageUrl} alt={`Cover of "${title}"`}/>
+            <h2>{title}</h2>
+            <p>{author}</p>
             <p>{shortDescription}</p>
-            <img className="cover-image" src={coverImageUrl} alt="alt placeholder text"/>
+            
             {expanded ? (
                 <div>
                     <button className="btn-sm controls"
                     onClick={() => setExpanded(false)}
                     >
-                    Hide expanded information
+                    {'\u25BC'} Less information
                     </button>
-                    <p><a href={url}>Placeholder URL text</a></p>
-                    <p>Published by: {publisher}, {publicationDate}</p>
-                    <p>{detailedDescription}</p>
+                    <p><strong>URL: </strong><a href={url}>{url}</a></p>
+                    <p><strong>Publisher: </strong>{publisher}</p>
+                    <p><strong>Publication date: </strong>{publicationDate}</p>
+                    <p><strong>Full description:</strong></p>
+                        <p>{detailedDescription}</p>
                 </div>
             ) : (
                 <button className="btn-sm controls" onClick={() => setExpanded(true)}>
-                    Show expanded information
+                    {'\u25B8'} More information
                 </button>
             )}
         </div>

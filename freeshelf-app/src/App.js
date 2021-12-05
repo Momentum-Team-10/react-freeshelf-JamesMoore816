@@ -1,3 +1,4 @@
+// import placeholder from './placeholder.png';
 import './App.css';
 import { useState } from 'react'
 import Book from './components/Book.js'

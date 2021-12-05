@@ -37,6 +37,33 @@
   }
 }
 
-.cover-image {
-  width: 100px;
+.book .cover-image {
+  float: right;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  width: 120px;
+}
+
+.book {
+  display: inline-block;
+  margin-left: 2em;
+  margin-bottom: 4px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: silver;
+}
+.book h2, p {
+  margin-bottom: 4px;
+  width: 800px;
+}
+
+.book button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  font-weight: bolder;
+  font-size: 14px;
 }

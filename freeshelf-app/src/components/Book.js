@@ -11,7 +11,7 @@ export default function Book(props) {
             <h2>{title}</h2>
             <h3>{author}</h3>
             <p>{shortDescription}</p>
-            <BookDisclosure url={url} publisher={publisher} pubDate={publicationDate} detailedDescription={detailedDescription}/>
+            <BookDisclosure url={url} publisher={publisher} publicationDate={publicationDate} detailedDescription={detailedDescription}/>
             {/* {expanded ? (
                 <div>
                     <button className="btn-sm controls"

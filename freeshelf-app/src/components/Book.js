@@ -2,7 +2,7 @@
 import BookDisclosure from './BookDisclosure'
 
 export default function Book(props) {
-    const { title, author, url, shortDescription, coverImageUrl, publisher, publicationDate, detailedDescription } = props
+    const { title, author, shortDescription, coverImageUrl} = props
     // const [expanded, setExpanded] = useState(false)
 
     return (
@@ -11,7 +11,7 @@ export default function Book(props) {
             <h2>{title}</h2>
             <h3>{author}</h3>
             <p>{shortDescription}</p>
-            <BookDisclosure url={url} publisher={publisher} publicationDate={publicationDate} detailedDescription={detailedDescription}/>
+            <BookDisclosure {...props}/>
             {/* {expanded ? (
                 <div>
                     <button className="btn-sm controls"

@@ -14,7 +14,7 @@ export default function BookDisclosure(props) {
                     >
                     {`${'\u25BC'} Less information`}
                     </button>
-                    <BookExpandedInfo url={url} publisher={publisher} pubDate={publicationDate} detailedDescription={detailedDescription}/>
+                    <BookExpandedInfo url={url} publisher={publisher} publicationDate={publicationDate} detailedDescription={detailedDescription} />
                     {/* {url ? (
                     <p><strong>URL: </strong><a href={url}>{url}</a></p>
                     ) : ''}
